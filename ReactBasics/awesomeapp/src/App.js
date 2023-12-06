@@ -34,17 +34,18 @@ function App() {
   return (
     <div>
     <Card>
-    <Item ItemName={response[0].name}>I love the girl</Item>
-      <ItemDate ItemDay={response[0].day} ItemMonth={response[0].month} ItemYear={response[0].year}></ItemDate>
-      
-      <Item ItemName={response[1].name}></Item>
-      <ItemDate ItemDay={response[1].day} ItemMonth={response[1].month} ItemYear={response[1].year}></ItemDate>
-
-      <Item ItemName={response[2].name}></Item>
-      <ItemDate ItemDay={response[2].day} ItemMonth={response[2].month} ItemYear={response[2].year}></ItemDate>
-
-      <Item ItemName={response[3].name}></Item>
-      <ItemDate ItemDay={response[3].day} ItemMonth={response[3].month} ItemYear={response[3].year}></ItemDate>
+    {
+     response.map((item) =>{
+      return (
+        <div>
+          <Item {...item}></Item>
+          <ItemDate {...item}></ItemDate>
+          
+        </div>
+      )
+    })
+    }
+     
     </Card>
       
       <div className="App">
