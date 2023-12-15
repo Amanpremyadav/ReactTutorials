@@ -92,11 +92,11 @@ const App = () => {
       <fieldset className='mb-4'>
         <legend className='font-medium text-sm'>By Email</legend>
         <div className='flex items-start gap-4 mt-2'>
-        <div>
-        <input type="checkbox" id="comments" name="comments"
-            checked={formData.comments} onChange={changeHandler} />
-        </div>
-          
+          <div>
+            <input type="checkbox" id="comments" name="comments"
+              checked={formData.comments} onChange={changeHandler} />
+          </div>
+
           <div>
             <label htmlFor="comments" className='font-medium text-sm'>Comments</label>
             <p className='text-sm text-gray-500'>Get notified when someone posts a comment on a posting</p>
@@ -104,11 +104,11 @@ const App = () => {
         </div>
 
         <div className='flex items-start gap-4 mt-2'>
-        <div>
-        <input type="checkbox" id="candidates" name="candidates"
-            checked={formData.candidates} onChange={changeHandler} />
-        </div>
-          
+          <div>
+            <input type="checkbox" id="candidates" name="candidates"
+              checked={formData.candidates} onChange={changeHandler} />
+          </div>
+
           <div>
             <label htmlFor="candidates" className='font-medium text-sm'>Candidates</label>
             <p className='text-sm text-gray-500'>Get notified when a candidate applies for a job</p>
@@ -116,11 +116,11 @@ const App = () => {
         </div>
 
         <div className='flex items-start gap-4 mt-2'>
-        <div>
-        <input type="checkbox" id="offers" name="offers"
-            checked={formData.offers} onChange={changeHandler} />
-        </div>
-         
+          <div>
+            <input type="checkbox" id="offers" name="offers"
+              checked={formData.offers} onChange={changeHandler} />
+          </div>
+
           <div>
             <label htmlFor="offers" className='font-medium text-sm'>Offers</label>
             <p className='text-sm text-gray-500'>Get notified when a candidate accepts or rejects an offer</p>
@@ -133,24 +133,24 @@ const App = () => {
         <legend className='font-medium text-sm'> Push Notifications </legend>
         <p className='text-sm text-gray-500'>These are delivered via SMS to your mobile phone.</p>
 
-<div className='flex gap-4 items-center mt-2'>
-<input type="radio" id="pushEverything" name="pushNotifications" value="Everything"
-          onChange={changeHandler} />
-        <label htmlFor="pushEverything" className='font-medium text-sm'>Everything</label>
+        <div className='flex gap-4 items-center mt-2'>
+          <input type="radio" id="pushEverything" name="pushNotifications" value="Everything"
+            onChange={changeHandler} />
+          <label htmlFor="pushEverything" className='font-medium text-sm'>Everything</label>
 
-</div>
-       <div className='flex gap-4 items-center mt-2'>
-       <input type="radio" id="pushEmail" name="pushNotifications" value="Same as email"
-          onChange={changeHandler} />
-        <label htmlFor="pushEmail" className='font-medium text-sm'>Same as email</label>
-       </div>
-       
-<div className='flex gap-4 items-center mt-2'>
-<input type="radio" id="pushNothing" name="pushNotifications" value="No Push Notification"
-          onChange={changeHandler} />
-        <label htmlFor="pushNothing" className='font-medium text-sm'>No Push Notification</label>
-</div>
-        
+        </div>
+        <div className='flex gap-4 items-center mt-2'>
+          <input type="radio" id="pushEmail" name="pushNotifications" value="Same as email"
+            onChange={changeHandler} />
+          <label htmlFor="pushEmail" className='font-medium text-sm'>Same as email</label>
+        </div>
+
+        <div className='flex gap-4 items-center mt-2'>
+          <input type="radio" id="pushNothing" name="pushNotifications" value="No Push Notification"
+            onChange={changeHandler} />
+          <label htmlFor="pushNothing" className='font-medium text-sm'>No Push Notification</label>
+        </div>
+
       </fieldset>
 
       <button className='bg-blue-500 font-medium text-white py-2 px-4 rounded-md hover:bg-blue-600
