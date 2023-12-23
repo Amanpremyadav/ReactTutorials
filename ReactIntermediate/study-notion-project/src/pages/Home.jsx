@@ -36,7 +36,7 @@ const Home = () => {
           <Filter filterData={filterData} category={category} setCategory={setCategory}></Filter>
         </div>
 
-        <div className="w-11/12 max-w-[1200px] mx-auto flex flex-wrap justify-center items-center min-h-[100vh]">
+        <div className="w-11/12 max-w-[1200px] mx-auto flex flex-wrap justify-center min-h-[100vh]">
           {
             loading ? (<Spinner />) : (<Cards courses={courses} category={category} />)
           }
