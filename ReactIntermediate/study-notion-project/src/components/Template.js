@@ -1,4 +1,3 @@
-import Signup from "../pages/Signup";
 import frameImage from '../assets/frame.png';
 import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";

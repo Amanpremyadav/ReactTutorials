@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FcLike, FcLikePlaceholder, GenIcon } from 'react-icons/fc';
+import { FcLike, FcLikePlaceholder} from 'react-icons/fc';
 import { toast } from "react-hot-toast";
 
 const Card = (props) => {
@@ -23,7 +23,7 @@ const Card = (props) => {
     }
     else{
       // pehle se koi bhi course liked nahi hai 
-      if(likedCourses.length==0){
+      if(likedCourses.length===0){
         setLikedCourses([course.id]);
       }
       // pehle se kuch courses liked courses ke array mein hain to esse add karenge ab agla liked course
@@ -38,7 +38,7 @@ const Card = (props) => {
   return (
     <div className='w-[300px] bg-bgDark rounded-md overflow-hidden bg-opacity-80 h-max'>
       <div className='relative'>
-        <img src={course.image.url}></img>
+        <img src={course.image.url} alt='course'></img>
         <div className='w-[40px] h-[40px] bg-white rounded-full absolute right-2 bottom-[-15px] grid place-items-center'>
           <button onClick={clickHandler}>
           {
