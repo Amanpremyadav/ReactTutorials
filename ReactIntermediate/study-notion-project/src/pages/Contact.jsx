@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function Contact() {
     const [formData, setFormData] = useState({
-        firstName: "", lastName: "", email: "", country: "india",
+        firstName: "", lastName: "", email: "", country: "India",
         streetAddress: "", city: "", state: "", postalCode: "", comments: false,
         candidates: false, offers: false, pushNotifications: ""
       });
@@ -55,10 +55,10 @@ function Contact() {
             <label htmlFor="country" className='text-[0.975rem] text-richblack-5 mb-1 leading-[1.375rem] font-bold'>Country</label>
             <select id="country" name="country" value={formData.country} className="outline w-full border border-blue-400
              rounded-md p-2 mt-2">
-              <option value="india">India</option>
-              <option value="usa">USA</option>
-              <option value="mexico">Mexico</option>
-              <option value="germany">Germany</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option> 
+              <option value="Mexico">Mexico</option>
+              <option value="Germany">Germany</option>
               <option value="France">France</option>
             </select>
           </div>
@@ -85,7 +85,7 @@ function Contact() {
           </div>
     
           <div>
-            <label htmlFor="p ostalCode" className='text-[0.975rem] text-richblack-5 mb-1 leading-[1.375rem] font-bold'>Postal Code</label> <br />
+            <label htmlFor="postalCode" className='text-[0.975rem] text-richblack-5 mb-1 leading-[1.375rem] font-bold'>Postal Code</label> <br />
             <input type="text" name="postalCode" id="postalCode" placeholder="Enter your postal code"
               value={formData.postalCode} onChange={changeHandler} className="outline w-full border border-blue-400
              rounded-md p-2 mt-2" />
@@ -112,7 +112,7 @@ function Contact() {
                   checked={formData.candidates} onChange={changeHandler} />
               </div>
     
-              <div>
+              <div>  
                 <label htmlFor="candidates" className='text-[0.975rem] text-richblack-5 mb-1 leading-[1.375rem] font-bold'>Candidates</label>
                 <p className='text-sm text-gray-500'>Get notified when a candidate raise query for a course</p>
               </div>
